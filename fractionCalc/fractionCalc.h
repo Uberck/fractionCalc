@@ -52,7 +52,7 @@ public:
     }
     Fraction& operator * (Fraction Number) {
         Fraction fraction;
-        // Multiplies the denomenator
+        // Multiplies the denominator
         fraction.denominator = denominator * Number.denominator;
         // Multiplies the numerator
         fraction.numerator = numerator * Number.numerator;
@@ -61,9 +61,9 @@ public:
     // Converts the fraction to a number
     Fraction& operator / (Fraction Number) {
         Fraction fraction;
-        // Multiply the denomenator with stored numerator
+        // Multiply the denominator with stored numerator
         fraction.denominator = denominator * Number.numerator;
-        // Multiply the numerator with stored denomenator
+        // Multiply the numerator with stored denominator
         fraction.numerator = numerator * Number.denominator;
         return fraction;
     }
